@@ -1,0 +1,23 @@
+@import url('bootstrap-custom-override.css');
+
+app-wizard-preview-page .td-brochure-program-name {
+	
+}
+app-tabbed-brochure .mat-tab-label{
+	
+}
+app-tabbed-brochure .mat-tab-label-active {
+	
+}
+ul.td-action-buttons-ct li button.mat-raised-button.mat-primary.mat-raised-button.mat-primary {
+	
+}
+app-custom-button-preview a.mat-raised-button.mat-primary:not([disabled]) {
+	
+}
+app-apply-now-button-preview button.mat-raised-button.mat-primary:not([disabled]) {
+	
+}
+app-wizard-preview-page .mat-tooltip {
+  
+}

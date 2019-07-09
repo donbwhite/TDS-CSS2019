@@ -1,0 +1,37 @@
+@import url('bootstrap-custom-override.css');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+
+app-wizard-preview-page .td-brochure-program-name {
+	font-family:'Fjalla One', sans-serif;  
+	font-size: 60px !important;
+	padding-bottom: 5px !important;
+	box-shadow: none !important;
+}
+app-tabbed-brochure .mat-tab-label{
+	text-transform: Uppercase;
+	width: 100%;
+	opacity:1 !important;
+	background:#f1f1f1;
+}
+app-tabbed-brochure .mat-tab-label-active {
+	background: #363636 !important;
+	color: #FFF !important;
+}
+ul.td-action-buttons-ct li button.mat-raised-button.mat-primary.mat-raised-button.mat-primary {
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight:bold;
+}
+app-custom-button-preview a.mat-raised-button.mat-primary:not([disabled]) {
+	font-family:'Fjalla One', sans-serif; 
+	font-size:20px !important;
+}
+app-apply-now-button-preview button.mat-raised-button.mat-primary:not([disabled]) {
+	border: 2px solid #38823a;
+	background: #FFF !important;
+	color: #38823a !important;
+}
+app-wizard-preview-page .mat-tooltip {
+	font-size:12px !important;
+	background: rgba(56,130,58,.9) !important;
+}

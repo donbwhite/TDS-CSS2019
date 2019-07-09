@@ -1,0 +1,78 @@
+/* TDS LAYOUT IMPORT 
+	The purpose for this is to ensure that the color scheme selected in Site > Layout Editor is maintained after the upload of a custom CSS file */
+@import url('bootstrap-custom-override.css');
+
+/* FONT IMPORT 
+	This will import the custom font selected from Google fonts. This same process would be done for a font uploaded into the Advanced Layout Editor */
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+
+/* PROGRAM WIZARD STYLING */
+	/* You will see the !important tag used quite a bit below. This is because without it the system will ignore the code in preference to the standard TDS styling */
+
+/* Program Header Style */
+app-wizard-preview-page .td-brochure-program-name {
+	/* The purpose for following the imported font-family with sans-serif in this isntance is that if something happens with the font it'll still load a simliar web safe font */
+	font-family:'Fjalla One', sans-serif;  
+	/* Font size will vary depending on what works well for your design. The font size in this document is based soley on a test program and imported font */
+	font-size: 60px !important;
+	/* This brings removes some of the spacing between the text and the line below */
+	padding-bottom: 5px !important;
+	/* This removes the shadow behind the title to give a more matte look */
+	box-shadow: none !important;
+}
+	
+/* Tabs */
+/* This is for the entire tab row */
+app-tabbed-brochure .mat-tab-label{
+	/* Makes the tab labels uppercase */
+	text-transform: Uppercase;
+	/* Adjusts the width to to full width as opposed to be aligned to the right. This is only visually good if you have less than four or five tabs */
+	width: 100%;
+	/* Normally the opacity of the tabs is set to 0 since they're meant to be white but since we're changing the background color this needs changed to 1 */
+	opacity:1 !important;
+	/* Changing the tab row background from white to an off-white/gray  */
+	background:#f1f1f1;
+}
+/* This edits only the Active tab */
+app-tabbed-brochure .mat-tab-label-active {
+	/* Change the background color to the same as the site's theme */
+	background: #363636 !important;
+	/* Change the text color as dark gray on green won't show up very well */
+	color: #FFF !important;
+}
+
+/* Buttons! */
+
+/* This styling is for the Action Buttons set containing "Apply Now" and "Request Information" */
+ul.td-action-buttons-ct li button.mat-raised-button.mat-primary.mat-raised-button.mat-primary {
+	/* Changes the text to be uppercase. Apply Now >> APPLY NOW */
+	text-transform: uppercase;
+	/* Slightly increases font size */
+	font-size: 15px;
+	/* Makes the text bold so it stands out more */
+	font-weight:bold;
+}
+/* This will modify the style of the all Custom Buttons used in Program Wizard */	
+app-custom-button-preview a.mat-raised-button.mat-primary:not([disabled]) {
+	/* Change the font to the imported font */
+	font-family:'Fjalla One', sans-serif; 
+	/* Increase the font's size */
+	font-size:20px !important;
+}
+/* This will modify the style of the Apply Now button (not the action button Apply Now) in Program Wizard */
+app-apply-now-button-preview button.mat-raised-button.mat-primary:not([disabled]) {
+	/* Adds a solid green border */
+	border: 2px solid #38823a;
+	/* Changes the background from the  theme color to white */
+	background: #FFF !important;
+	/* Changes the text color to the theme color since we're inverting colors */
+	color: #38823a !important;
+}
+
+/* Tooltip styles */
+app-wizard-preview-page .mat-tooltip {
+    /* Increase the font size for legibility */  
+    font-size:12px !important;
+	/* Give the background some color. You can use a regular hex color but I'm using rgba so I can use the alpha channel for some opacity */
+	background: rgba(56,130,58,.9) !important;
+}
